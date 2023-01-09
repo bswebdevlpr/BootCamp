@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script>
+            function addElem(){
+                $("#table > tbody > tr").append("\
+                    <td>4</td>\
+                ");
+            }
+        </script>        
+    </head> 
+
+    <body>
+        <table id="table" border="1">
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="addElem();">추가하기</button>
+    </body>
+</html>
