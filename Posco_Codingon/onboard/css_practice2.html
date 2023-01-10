@@ -1,0 +1,48 @@
+<html>
+    <meta charset="utf-8">
+    <head>
+        <title>css_practice2</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
+        <style>
+            span {
+                display: inline-block;
+                width: 150px;
+                height: 150px;
+            }
+            table {
+                background-color: gray;
+            }
+        </style>
+        
+        <script>
+            function addSchedule(){
+                const date = $('#date').val();
+                const content = $('#content').val();
+                $('#table > tbody').append(`
+                    <tr>
+                        <td>
+                            <span>
+                                <p>${date}</p>
+                                <p>${content}</p>
+                            </span>
+                        </td>
+                    </tr>
+                `);
+            }
+        </script>
+    </head>
+
+    <body>
+        <input id="date" type="text" placeholder="날짜">
+        <br/>
+        <input id="content" type="text" placeholder="추가할 내용">
+        <br/>
+        <button onclick="addSchedule()">추가하기</button>
+        
+        <table id="table">
+            <tbody>
+                
+            </tbody>
+        </table>
+    </body>
+</html>
