@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caterpillar</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js" ></script>
+    <script>
+    </script>
+
+    <style>
+        .circle {
+            border-radius: 50px;
+            width: 100px;
+            height: 100px;
+        }
+
+        #head {
+            background-color: yellow;
+            position: relative;
+        }
+        
+        #black_eye {
+            background-color: black;
+            width: 20px;
+            height: 20px;
+
+            position: absolute;
+            left: 5px;
+            top: 5px;
+        }
+
+        #white_eye {
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+
+        #neck {
+            background-color: greenyellow;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        #body1 {
+            background-color: green;
+        }
+
+        #body2 {
+            background-color: greenyellow;
+        }
+
+        .move_diagonal_50px {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+
+        .move_left_50px {
+            position: absolute;
+            left: 50px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle" id="head">
+        <div class="circle" id="white_eye">
+            <div class="circle" id="black_eye"></div>
+        </div>
+        <div class="circle" id="neck">
+            <div class="circle move_diagonal_50px" id="body1">
+                <div class="circle move_left_50px" id="body2">
+                    <div class="circle move_left_50px" id="body1">
+                        <div class="circle move_left_50px" id="body2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    
+</body>
+</html>
