@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        div {
+            position: relative;
+            -webkit-animation: from_right;
+            -webkit-animation-duration: 2s;
+        }
+        #p2 {
+            width: 100ch;
+            position: absolute;
+            animation-fill-mode: forwards;
+
+            animation: fadeInLeft 3s steps(50);
+        }
+
+        @-webkit-keyframes from_right{
+            from {
+                left: 100%;
+            }
+            to {
+                left: 0%;
+                -webkit-animation-timing-function: ease-in;
+            }
+        }
+        @keyframes fadeInLeft {
+            from {
+                visibility: hidden;
+                transform: translate3d(-100%, 0, 0);
+            }
+            50% {
+                visibility: visible;
+            }
+            to {
+                visibility: visible;
+                transform: translateZ(0);
+            }
+        }
+        
+    </style>
+     
+    <div>
+        “As I relax on the sofa and gaze around a room a thought hits me: this is exactly the place I’ve been looking for all my life. A little hideaway in some sinkhole somewhere. I’d always thought of it as a secret,
+        <p id="p2">hello</p>
+    </div>
+</html>

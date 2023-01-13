@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            height: 100vh;
+            /*This part is important for centering*/
+            display: grid;
+            place-items: center;
+            }
+
+            .typing-demo {
+            width: 22ch;
+            animation: typing 2s steps(25), blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            /* animation-iteration-count: infinite; */
+            /* border-right: 3px solid;
+            font-family: monospace;
+            font-size: 2em; */
+            }
+
+            @keyframes typing {
+            from {
+                width: 0
+            }
+            }
+                
+            @keyframes blink {
+            50% {
+                border-color: transparent
+            }
+            }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="typing-demo">
+            imaginary place, and can barely believe that it actually exists. I close my eyes and take a breath, and wonder of it all settles over me like a gentle cloud.”        
+        </div>
+    </div>
+</body>
+</html>
