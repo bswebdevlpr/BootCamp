@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>종합실습 6</title>
+
+        <style>
+            #div1 {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+
+                display:flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #div2 {
+                width: 180px;
+                height: 180px;
+                background-color: red;
+
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+            }
+            #div3 {
+                width: 180px;
+                height: 170px;
+                background-color: green;
+                
+                display: flex;
+                justify-content: right;
+
+                position: relative;
+            }
+            p {
+                margin: 0;
+                color: white;
+
+                position: absolute;
+                right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">
+            <div id="div2">
+                <div id="div3">
+                    <p>안녕하세요</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

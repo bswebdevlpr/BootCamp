@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>종합실습7</title>
+        <style>
+            div {
+                vertical-align:text-top;
+                font-size: 0;
+            }
+
+            #orange_box {
+                background-color: orange;
+
+                height: 120px;
+                width: 150px;
+                
+                display: inline-block;
+            }
+
+            #skyblue_box {
+                background-color: skyblue;
+
+                height: 200px;
+                width: 200px;
+                margin-left: 10px;
+
+                display: inline-block;
+                position: relative;
+            }
+
+            #yellowgreen_box {
+                background-color: yellowgreen;
+                
+                height: 50px;
+                width: 100px;
+
+                position: absolute;
+                right: 5px;
+                bottom: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <div id="orange_box"></div>
+            <div id="skyblue_box">
+                <div id="yellowgreen_box"></div>
+            </div>
+        </div>
+    </body>
+</html>

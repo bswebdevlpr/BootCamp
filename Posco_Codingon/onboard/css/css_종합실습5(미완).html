@@ -7,11 +7,13 @@
             -webkit-animation-duration: 2s;
         }
         #p2 {
-            width: 100ch;
             position: absolute;
-            animation-fill-mode: forwards;
+            transform: translateX(-200px);
+            visibility: hidden;
 
-            animation: fadeInLeft 3s steps(50);
+            animation: fadeInLeft 1s steps(50);
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
         }
 
         @-webkit-keyframes from_right{
@@ -25,22 +27,18 @@
         }
         @keyframes fadeInLeft {
             from {
-                visibility: hidden;
-                transform: translate3d(-100%, 0, 0);
-            }
-            50% {
                 visibility: visible;
             }
             to {
                 visibility: visible;
-                transform: translateZ(0);
+                transform: translateX(200px)
             }
         }
         
     </style>
      
     <div>
-        “As I relax on the sofa and gaze around a room a thought hits me: this is exactly the place I’ve been looking for all my life. A little hideaway in some sinkhole somewhere. I’d always thought of it as a secret,
+        <p>“As I relax on the sofa and gaze around a room a thought hits me: this is exactly the place I’ve been looking for all my life. A little hideaway in some sinkhole somewhere. I’d always thought of it as a secret,</p>
         <p id="p2">hello</p>
     </div>
 </html>
